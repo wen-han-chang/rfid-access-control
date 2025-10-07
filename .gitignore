@@ -1,41 +1,62 @@
-# Prerequisites
+# ---- Toolchains / Build artifacts ----
 *.d
-
-# Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
-
-# Precompiled Headers
 *.gch
 *.pch
-
-# Linker files
 *.ilk
-
-# Debugger Files
 *.pdb
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
 *.mod
 *.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-
-# Executables
 *.exe
 *.out
 *.app
-
-# debug information files
 *.dwo
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+
+# ---- Arduino / PlatformIO / CMake ----
+.pio/
+.arduinoIDE/
+build/
+cmake-build-*/
+# Arduino CLI sometimes creates temp sketch build dirs
+**/sketch*/build*/
+# SPIFFS/LittleFS images are in .pio/ already, but keep generic:
+*.spiffs.bin
+*.littlefs.bin
+
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs / temps / patches ----
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+*.orig
+*.rej
+
+# ---- Local env/config you don't want to leak ----
+.env
+.env.*
