@@ -1,4 +1,4 @@
-# RFID-access-control
+# RFID Access Control
 
 ESP32 + RC522 + OLED + Servo 的 RFID 智慧門鎖，支援白名單驗證與 OLED 狀態顯示，成功卡片會觸發伺服馬達模擬開鎖，失敗卡片則拒絕。
 
