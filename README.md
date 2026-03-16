@@ -1,18 +1,18 @@
-# rfid-access-control 🔐
+# rfid-access-control
 
 ESP32 + RC522 + OLED + Servo 的 RFID 智慧門鎖，支援白名單驗證與 OLED 狀態顯示，成功卡片會觸發伺服馬達模擬開鎖，失敗卡片則拒絕。
 
 ---
 
-## ✨ Features
-- ✅ RFID 白名單驗證  
-- ✅ OLED 顯示狀態 (Scan / Success / Failure)  
-- ✅ 伺服馬達控制門鎖  
-- ❌ 未授權卡片 → 拒絕進入  
+## Features
+-  RFID 白名單驗證  
+-  OLED 顯示狀態 (Scan / Success / Failure)  
+-  伺服馬達控制門鎖  
+-  未授權卡片 → 拒絕進入  
 
 ---
 
-## 🛠 Hardware Requirements
+##  Hardware Requirements
 - ESP32 Dev Board  
 - RC522 RFID Reader  
 - Grove OLED Display  
@@ -21,7 +21,7 @@ ESP32 + RC522 + OLED + Servo 的 RFID 智慧門鎖，支援白名單驗證與 OL
 
 ---
 
-## 🔌 Wiring
+##  Wiring
 | ESP32 Pin | Module      | Pin   |
 |-----------|-------------|-------|
 | 21        | OLED SDA    | SDA   |
@@ -36,7 +36,7 @@ ESP32 + RC522 + OLED + Servo 的 RFID 智慧門鎖，支援白名單驗證與 OL
 
 ---
 
-## 🚀 Usage
+##  Usage
 1. 將程式碼 (`main.cpp` 或 `rfid-access-control.ino`) 上傳至 ESP32  
 2. 修改 `allowedUIDs` 陣列，新增允許的 RFID 卡片 UID  
    ```cpp
